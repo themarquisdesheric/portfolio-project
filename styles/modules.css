@@ -8,6 +8,11 @@ header:hover ul {
   display: block;
 }
 
+/* make this more clickable */
+header:active ul {
+  display: block;
+}
+
 ul {
   display: none;
   padding: 0;
