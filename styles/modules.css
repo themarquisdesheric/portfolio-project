@@ -50,4 +50,8 @@ li:last-child {
   nav li:last-child {
     border: none;
   }
+
+  hr {
+    width: 77%;
+  }
 }
