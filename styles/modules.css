@@ -1,0 +1,57 @@
+.icon-menu {
+  float: right;
+  font-size: 2.5em;
+  margin-right: 1em;
+}
+
+header:hover ul {
+  display: block;
+}
+
+ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  padding: .5em;
+  border-top: 1px solid #333;
+  font-size: 1.1em;
+  width: 60%;
+}
+
+li:last-child {
+  border-bottom: 1px solid #333;
+}
+
+@media only screen and (min-width: 740px) {
+  #wrapper {
+    max-width: 40%;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline;
+    padding: 1em;
+    border: none;
+  }
+
+  nav li:last-child {
+    border: none;
+  }
+
+  hr {
+    width: 77%;
+  }
+}
