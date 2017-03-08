@@ -45,7 +45,6 @@ nav {
 
 hr {
   width: 85%;
-  color: #000;
 }
 
 /* MAIN STYLES */
@@ -56,13 +55,22 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-img {
+#intro-pic {
   border-radius: 100%;
   border: 1px solid rgb(0, 0, 238);
 }
 
 #skills {
   padding-bottom: 5em;
+}
+
+article:nth-child(odd) {
+  border-top: 1px inset #ccc;
+  border-bottom: 1px inset #ccc;
+}
+
+h2 {
+  padding-top: 2em;
 }
 
 #projects {
@@ -72,12 +80,16 @@ img {
 
 #projects p {
   padding-bottom: 3em;
+  text-align: justify;
 }
 
-h2 {
-  padding-top: 2em;
+#projects img {
+  max-width: 300px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px #999;
 }
 
 #contact {
-  padding-bottom: 5em;
+  padding-bottom: 1em;
 }
