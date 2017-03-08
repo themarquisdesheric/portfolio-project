@@ -1,5 +1,7 @@
 'use strict';
 
+//TODO: remove article.template
+
 var projects = [];
 
 function Project(app) {
@@ -13,7 +15,7 @@ function Project(app) {
 Project.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
   //set title
-  $newProject.find('h2 a').text(this.title);
+  $newProject.find('h2').text(this.title);
   //set GitHub URL
   $newProject.find('a[class="github-link"]').attr('href', this.url);
   //set image

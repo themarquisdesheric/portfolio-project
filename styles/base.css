@@ -64,6 +64,11 @@ p {
   padding-bottom: 5em;
 }
 
+article:nth-child(odd) {
+  border-top: 1px inset #ccc;
+  border-bottom: 1px inset #ccc;
+}
+
 h2 {
   padding-top: 2em;
 }
@@ -75,12 +80,14 @@ h2 {
 
 #projects p {
   padding-bottom: 3em;
+  text-align: justify;
 }
 
 #projects img {
-  width: 475px;
+  max-width: 300px;
   border: 2px solid #333;
   border-radius: 4px;
+  box-shadow: 2px 2px 3px #999;
 }
 
 #contact {

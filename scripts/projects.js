@@ -11,7 +11,7 @@ var githubProjects = [
     body: '<p>Salmon Cookies is a website created to model the business needs of a fictional chain which sells -- you guessed it! -- salmon cookies. It appears that demand is at an all-time high for these cookies, and the owners wanted a website that would not only please their customers, but also provide them with important data regarding cookie sales. They also wanted us to specifically use all of their images. </p>'
   },
   {
-    title: 'About Me',
+    title: 'First Intro Site',
     url: 'https://github.com/themarquisdesheric/about_me',
     hosted: 'https://themarquisdesheric.github.io/project-site/index.html',
     image: 'images/about_me.png',
