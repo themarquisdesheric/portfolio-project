@@ -55,13 +55,17 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
-img {
+#intro-pic {
   border-radius: 100%;
   border: 1px solid rgb(0, 0, 238);
 }
 
 #skills {
   padding-bottom: 5em;
+}
+
+h2 {
+  padding-top: 2em;
 }
 
 #projects {
@@ -73,10 +77,12 @@ img {
   padding-bottom: 3em;
 }
 
-h2 {
-  padding-top: 2em;
+#projects img {
+  width: 475px;
+  border: 2px solid #333;
+  border-radius: 4px;
 }
 
 #contact {
-  padding-bottom: 5em;
+  padding-bottom: 1em;
 }
