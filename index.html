@@ -17,8 +17,9 @@
       <h1>Yuval Allweil</h1><span class="icon-menu"></span>
       <nav>
         <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a class="icon-github" href="#"> GitHub</a></li>
+          <li class="tab active" data-content="intro"><a href="#">Home</a></li>
+          <li class="tab" data-content="projects"><a href="#projects">Projects</a></li>
+          <li><a class="icon-github" href="https://github.com/themarquisdesheric"> GitHub</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -27,31 +28,25 @@
     <hr>
 
     <main>
-      <section id="intro">
+      <section id="intro" class="tab-content">
         <p>
           Hi there! My name is Yuval and I am studying full-stack web development at Code Fellows.
         </p>
-      </section>
+      
+        <img id="intro-pic" src="https://media.licdn.com/media/AAEAAQAAAAAAAASGAAAAJDkwMzI2ODBkLTdjZDMtNGU4Mi1iOWJkLTJkNjA4YmRkNWU4Zg.jpg"/>
 
-      <img id="intro-pic" src="https://media.licdn.com/media/AAEAAQAAAAAAAASGAAAAJDkwMzI2ODBkLTdjZDMtNGU4Mi1iOWJkLTJkNjA4YmRkNWU4Zg.jpg"/>
-
-      <section id="skills">
         <p>
           I am focused on frontend development and UX, and look forward to bridging my passion for marketing and design with coding to create rich new experiences for people all over the world. 
         </p>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        
+      <section id="projects" class="tab-content">
         <article class="template">
           <a class="github-link"><h2>Title</h2>
             <img/>
           </a>
           <section class="description"></section>
-          <!--<a class="hosted-link">Check it out</a>-->
         </article>
-
       </section>
 
       <section id="contact">
@@ -67,5 +62,6 @@
   crossorigin="anonymous"></script>
 <script src="scripts/projects.js"></script>
 <script src="scripts/app.js"></script>
+<script src="scripts/view.js"></script>
 </body>
 </html>
