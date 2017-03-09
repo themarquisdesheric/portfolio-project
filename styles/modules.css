@@ -9,29 +9,17 @@ header:hover ul, header:active ul {
   display: block;
 }
 
-ul {
-  display: none;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  padding: .5em;
-  border-top: 1px solid rgb(243, 243, 241);
-  font-size: 1.1em;
-  width: 60%;
-  margin: auto;
-}
-
-li:last-child {
-  border-bottom: 1px solid rgb(243, 243, 241);
+.active a {
+  font-weight: bold;
+  color: rgb(243, 243, 241);
+  text-shadow: 1px 1px 1px #333;
 }
 
 .template {
   display: none;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 401px) {
   #wrapper {
     max-width: 40%;
   }

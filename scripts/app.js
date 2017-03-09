@@ -1,7 +1,5 @@
 'use strict';
 
-//TODO: remove article.template
-
 var projects = [];
 
 function Project(app) {
@@ -38,3 +36,6 @@ githubProjects.forEach(function(proj) {
 projects.forEach(function(post) {
   $('#projects').append(post.toHtml());
 });
+
+//remove article template
+$('article.template').remove();
