@@ -99,6 +99,11 @@ h2 {
   background-color: rgb(243, 243, 241);
 }
 
+#projects a {
+  color: #333;
+  text-shadow: 1px 1px 1px rgb(117, 163, 215);
+}
+
 #projects p {
   padding-bottom: 3em;
   text-align: justify;
