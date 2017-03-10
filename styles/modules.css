@@ -1,22 +1,23 @@
 .icon-menu {
   float: right;
   font-size: 2.5em;
-  margin-right: 1em;
+  margin-right: .4em;
   color: rgb(243, 243, 241);
 }
 
-header:hover ul, header:active ul {
+nav:hover ul, nav:active ul {
   display: block;
+}
+
+h1 {
+    float: left;
+    padding-left: 20%;
 }
 
 .active a {
   font-weight: bold;
   color: rgb(243, 243, 241);
   text-shadow: 1px 1px 1px #333;
-}
-
-.template {
-  display: none;
 }
 
 @media only screen and (min-width: 401px) {
@@ -26,6 +27,12 @@ header:hover ul, header:active ul {
 
   .icon-menu {
     display: none;
+  }
+
+  h1 {
+    display: block;
+    float: none;
+    padding-left: 0;
   }
 
   nav ul {

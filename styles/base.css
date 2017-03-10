@@ -47,6 +47,7 @@ ul {
   display: none;
   padding: 0;
   list-style: none;
+  clear: both;
 }
 
 li {
@@ -91,9 +92,16 @@ h2 {
   padding-top: 2em;
 }
 
+/* PROJECT STYLES */
+
 #projects {
   color: #333;
   background-color: rgb(243, 243, 241);
+}
+
+#projects a {
+  color: #333;
+  text-shadow: 1px 1px 1px rgb(117, 163, 215);
 }
 
 #projects p {
@@ -108,8 +116,18 @@ h2 {
   box-shadow: 2px 2px 3px #999;
 }
 
+/* CONTACT STYLES */
+
 #contact {
   background-color: rgba(0, 0, 150, .5);
   padding-bottom: 1em;
   margin-top: -19px;
+}
+
+#contact h2 {
+  text-shadow: 1px 1px 1px #333;
+}
+
+#contact a {
+  color: rgb(117, 163, 215);
 }

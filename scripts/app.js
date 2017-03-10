@@ -11,21 +11,11 @@ function Project(app) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  //set title
-  $newProject.find('h2').text(this.title);
-  //set GitHub URL
-  $newProject.find('a[class="github-link"]').attr('href', this.url);
-  //set image
-  $newProject.find('img').attr('src', this.image);
-  //set body
-  $newProject.find('section.description').html(this.body);
-  //set hosted URL
-  $newProject.find('a[class="hosted-link"]').attr('href', this.hosted);
-  //remove template class
-  $newProject.removeClass('template');
+  var source = $('#project-template').html();
+  var template = Handlebars.compile(source);
+  var html = template(this);
 
-  return $newProject;
+  return html;
 };
 
 githubProjects.forEach(function(proj) {
@@ -36,6 +26,3 @@ githubProjects.forEach(function(proj) {
 projects.forEach(function(post) {
   $('#projects').append(post.toHtml());
 });
-
-//remove article template
-$('article.template').remove();
