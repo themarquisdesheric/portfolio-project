@@ -47,6 +47,7 @@ ul {
   display: none;
   padding: 0;
   list-style: none;
+  clear: both;
 }
 
 li {
@@ -91,6 +92,8 @@ h2 {
   padding-top: 2em;
 }
 
+/* PROJECT STYLES */
+
 #projects {
   color: #333;
   background-color: rgb(243, 243, 241);
@@ -107,6 +110,8 @@ h2 {
   border-radius: 4px;
   box-shadow: 2px 2px 3px #999;
 }
+
+/* CONTACT STYLES */
 
 #contact {
   background-color: rgba(0, 0, 150, .5);
