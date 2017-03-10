@@ -1,13 +1,11 @@
 'use strict';
 
-//TODO: make active navlink bold
-
-// you can fire a click event to show home, like in the project. Not necessary though
+// you can fire a click event to show home, like in the class-03 project. Not necessary though
 
 var view = {};
 
 view.tabbedContent = function() {
-  $('section#projects').hide();
+  $('#projects').hide();
   $('nav').on('click', '.tab', function(event) {
     var clicked = $(this).attr('data-content');
     event.preventDefault();

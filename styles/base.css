@@ -113,3 +113,11 @@ h2 {
   padding-bottom: 1em;
   margin-top: -19px;
 }
+
+#contact h2 {
+  text-shadow: 1px 1px 1px #333;
+}
+
+#contact a {
+  color: rgb(117, 163, 215);
+}
