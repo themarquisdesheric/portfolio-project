@@ -13,6 +13,36 @@ body {
   max-width: 40%;
 }
 
+header {
+  padding-top: 2em;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-transform: lowercase;
+  float: left;
+  padding-left: 12.8%;
+  text-shadow: 1px 1px 1px #000;
+  font-family: Impact, sans-serif;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+nav {
+  padding-top: .5em;
+} 
+
+.icon-menu {
+  float: right;
+  font-size: 2.9em;
+  margin-right: .1em;
+  margin-top: -2.3em;
+  color: rgb(0, 0, 238);
+}
+
+/* LINK STYLES */
+
 a {
   text-decoration: none;
 }
@@ -26,107 +56,24 @@ a:hover {
   font-weight: bold;
 }
 
-/* HEADER STYLES */
-
-header {
-  padding-top: 2em;
-  padding-bottom: 1em;
+nav a {
+  text-transform: uppercase;
 }
 
-h1 {
-  display: inline;
-  font-size: 2.5em;
-  text-shadow: 1px 1px 1px rgb(0, 0, 238);
-}
-
-nav {
-  padding-top: .5em;
-}
-
-ul {
-  display: none;
-  padding: 0;
-  list-style: none;
-  clear: both;
-}
-
-li {
-  padding: .5em;
-  border-top: 1px solid rgb(243, 243, 241);
-  font-size: 1.1em;
-  width: 60%;
-  margin: auto;
-}
-
-li:last-child {
-  border-bottom: 1px solid rgb(243, 243, 241);
-}
-
-hr {
-  width: 85%;
+.active a {
+  font-weight: bold;
+  color: rgb(243, 243, 241);
+  text-shadow: 1px 1px 1px #333;
 }
 
 /* MAIN STYLES */
-
-p {
-  line-height: 1.8em;
-  padding: 1em 2.5em;
-  font-family: 'Open Sans', sans-serif;
-}
-
-#intro-pic {
-  border-radius: 100%;
-  border: 1px solid rgb(0, 0, 238);
-}
-
-#intro {
-  padding-bottom: 5em;
-}
-
-article:nth-child(odd) {
-  background-color: rgb(225,225,225);
-}
 
 h2 {
   padding-top: 2em;
 }
 
-/* PROJECT STYLES */
-
-#projects {
-  color: #333;
-  background-color: rgb(243, 243, 241);
-}
-
-#projects a {
-  color: #333;
-  text-shadow: 1px 1px 1px rgb(117, 163, 215);
-}
-
-#projects p {
-  padding-bottom: 3em;
-  text-align: justify;
-}
-
-#projects img {
-  max-width: 300px;
-  border: 2px solid #333;
-  border-radius: 4px;
-  box-shadow: 2px 2px 3px #999;
-}
-
-/* CONTACT STYLES */
-
-#contact {
-  background-color: rgba(0, 0, 150, .5);
-  padding-bottom: 1em;
-  margin-top: -19px;
-}
-
-#contact h2 {
-  text-shadow: 1px 1px 1px #333;
-}
-
-#contact a {
-  color: rgb(117, 163, 215);
+p {
+  line-height: 1.8em;
+  padding: 1em 2.5em;
+  font-family: 'Open Sans', sans-serif;
 }

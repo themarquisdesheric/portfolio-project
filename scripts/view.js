@@ -14,7 +14,7 @@ view.tabbedContent = function() {
     $(this).addClass('active');
     //hide all sections and display relevant section
     $('section').not('section#contact, section.description').hide();
-    $('section#' + clicked).show();
+    $('section#' + clicked).fadeIn(800);
 
     if (clicked === 'projects') {
       $('hr').hide();
