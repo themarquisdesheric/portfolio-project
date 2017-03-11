@@ -1,38 +1,116 @@
-.icon-menu {
-  float: right;
-  font-size: 2.5em;
-  margin-right: .4em;
-  color: rgb(243, 243, 241);
-}
+/* HEADER STYLES */
 
 nav:hover ul {
   display: block;
 }
 
-h1 {
-    float: left;
-    padding-left: 20%;
+ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
 }
 
-.active a {
-  font-weight: bold;
-  color: rgb(243, 243, 241);
+li {
+  padding: .5em;
+  border-top: 1px solid rgb(117, 163, 215);
+  font-size: 1.1em;
+  width: 60%;
+  margin: auto;
+}
+
+li:last-child {
+  border-bottom: 1px solid rgb(117, 163, 215);
+}
+
+hr {
+  width: 85%;
+}
+
+/* MAIN STYLES */
+
+#intro-pic {
+  border-radius: 100%;
+  border: 1px solid rgb(0, 0, 238);
+}
+
+#intro {
+  padding-bottom: 5em;
+}
+
+article:nth-child(even) {
+  background-color: rgb(225,225,225);
+}
+
+/* PROJECT STYLES */
+
+#projects {
+  color: #333;
+  background-color: rgb(243, 243, 241);
+}
+
+#projects a {
+  color: #333;
+  text-shadow: 1px 1px 1px rgb(117, 163, 215);
+}
+
+#projects p {
+  padding-bottom: 3em;
+  text-align: justify;
+}
+
+#projects img {
+  max-width: 300px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  box-shadow: 2px 2px 3px #999;
+}
+
+/* CONTACT STYLES */
+
+#contact {
+  background-color: rgba(0, 0, 150, .5);
+  padding-bottom: 1em;
+  margin-top: -19px;
+}
+
+#contact h2 {
   text-shadow: 1px 1px 1px #333;
 }
 
-@media only screen and (min-width: 401px) {
+#contact a {
+  color: rgb(117, 163, 215);
+}
+
+
+
+
+/* NON-MOBILE STYLES */
+
+@media only screen and (min-width: 1010px) {
+  .icon-menu {
+    margin-top: -0.8em;
+  }
+}
+
+@media only screen and (min-width: 1220px) {
   #wrapper {
     max-width: 40%;
   }
 
-  .icon-menu {
-    display: none;
+  /* HEADER STYLES */
+
+  header {
+    padding-bottom: 1em;
   }
 
   h1 {
-    display: block;
     float: none;
     padding-left: 0;
+  }
+
+  .icon-menu {
+    display: none;
   }
 
   nav ul {
@@ -44,7 +122,7 @@ h1 {
 
   nav li {
     display: inline;
-    padding: 1em;
+    padding: em;
     border: none;
   }
 
@@ -55,6 +133,8 @@ h1 {
   hr {
     width: 77%;
   }
+
+  /* MAIN STYLES */
 
   #projects img {
     max-width: 320px;
