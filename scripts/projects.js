@@ -1,7 +1,5 @@
 'use strict';
 
-//TODO: add 72RPM project explaining you did the logic; change the order of the projects
-
 var githubProjects = [
   {
     title: 'Salmon Cookies',

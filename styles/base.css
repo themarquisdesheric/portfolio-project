@@ -22,7 +22,8 @@ h1 {
   text-transform: lowercase;
   float: left;
   padding-left: 12.8%;
-  text-shadow: 1px 1px 1px #000;
+  color: #115;
+  text-shadow: 1px 1px 1px rgb(117, 163, 215);
   font-family: Impact, sans-serif;
   margin-top: 0.2em;
   margin-bottom: 0;
