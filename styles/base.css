@@ -84,8 +84,7 @@ p {
 }
 
 article:nth-child(odd) {
-  border-top: 1px inset #ccc;
-  border-bottom: 1px inset #ccc;
+  background-color: rgb(225,225,225);
 }
 
 h2 {
