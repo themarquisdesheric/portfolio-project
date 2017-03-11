@@ -5,7 +5,7 @@
   color: rgb(243, 243, 241);
 }
 
-nav:hover ul, nav:active ul {
+nav:hover ul {
   display: block;
 }
 
