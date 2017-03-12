@@ -38,15 +38,18 @@ hr {
   padding-bottom: 5em;
 }
 
-article:nth-child(even) {
-  background-color: rgb(225,225,225);
+/* PROJECT STYLES */
+
+article {
+  background: linear-gradient(to left, #fff, #ddd);
 }
 
-/* PROJECT STYLES */
+article:nth-child(even) {
+  background: linear-gradient(to left, #ddd, #bbb);
+}
 
 #projects {
   color: #333;
-  background-color: rgb(243, 243, 241);
 }
 
 #projects a {
@@ -54,9 +57,14 @@ article:nth-child(even) {
   text-shadow: 1px 1px 1px rgb(117, 163, 215);
 }
 
+#projects h2 {
+  margin-top: 0;
+}
+
 #projects p {
   padding-bottom: 3em;
   text-align: justify;
+  margin-bottom: 0;
 }
 
 #projects img {
@@ -136,7 +144,12 @@ article:nth-child(even) {
 
   /* MAIN STYLES */
 
+  main {
+    margin-top: 0;
+  }
+
   #projects img {
-    max-width: 320px;
+    /* previously 320px */
+    max-width: 388px;
   }
 }
