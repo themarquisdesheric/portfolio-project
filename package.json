@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "Yuval's Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themarquisdesheric/portfolio-project.git"
+  },
+  "author": "Yuval Allweil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/themarquisdesheric/portfolio-project/issues"
+  },
+  "homepage": "https://github.com/themarquisdesheric/portfolio-project#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
