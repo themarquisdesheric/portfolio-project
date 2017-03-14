@@ -149,7 +149,6 @@ article:nth-child(even) {
   }
 
   #projects img {
-    /* previously 320px */
     max-width: 388px;
   }
 }

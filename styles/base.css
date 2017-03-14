@@ -2,6 +2,7 @@
 
 body {
   background: url(http://www.psdgraphics.com/file/blue-sky-sun.jpg) no-repeat;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #wrapper {
@@ -75,5 +76,4 @@ h2 {
 p {
   line-height: 1.8em;
   padding: 1em 2.5em;
-  font-family: 'Open Sans', sans-serif;
 }

@@ -9,7 +9,8 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+/* added ::before here so it only applies to the pseudo element -- so I can style the font */
+[class^="icon-"]::before, [class*=" icon-"]::before {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
