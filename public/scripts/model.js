@@ -37,7 +37,7 @@ Project.fetchAll = function() {
       type: 'GET',
       success: function(data) {
         localStorage.setItem('rawData', JSON.stringify(data));
-        Project.loadAll(JSON.parse(localStorage.rawData));
+        Project.loadAll(data);
       },
       error: function(err) {
         console.error('AJAX error!', err);
