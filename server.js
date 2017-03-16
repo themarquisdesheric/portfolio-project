@@ -12,7 +12,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('*', function(request, response) {
-  response.status(404).end('404 error: page not found');
+  response.status(404).send('404 error: page not found');
 });
 
 app.listen(PORT, function() {
