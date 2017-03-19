@@ -1,5 +1,7 @@
 'use strict';
 
+//wrap in an IIFE
+
 var view = {};
 
 view.tabbedContent = function() {

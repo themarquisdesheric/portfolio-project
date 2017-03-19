@@ -1,5 +1,7 @@
 'use strict';
 
+//wrap in IIFE
+
 function Project(app) {
   this.title = app.title;
   this.url = app.url;
@@ -16,6 +18,8 @@ Project.prototype.toHtml = function() {
 
   return template(this);
 };
+
+//use arrow functions here
 
 Project.loadAll = function(rawData) {
   rawData.forEach(function(proj) {
