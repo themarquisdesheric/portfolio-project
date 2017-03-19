@@ -19,33 +19,25 @@ Project.prototype.toHtml = function() {
   return template(this);
 };
 
-//use arrow functions here
+Project.loadAll = (rawData) => {
+  //create project instances and push them into projects array
+  rawData.forEach((proj) => Project.all.push(new Project(proj)));
 
-Project.loadAll = function(rawData) {
-  rawData.forEach(function(proj) {
-    //create project instances and push them into projects array
-    Project.all.push(new Project(proj));
-  });
-
-  Project.all.forEach(function(post) {
-    $('#projects').append(post.toHtml());
-  });
+  Project.all.forEach((post) => $('#projects').append(post.toHtml()));
 }
 
-Project.fetchAll = function() {
+Project.fetchAll = () => {
   if (localStorage.rawData) {
     Project.loadAll(JSON.parse(localStorage.rawData));
   } else {
     $.ajax({
       url: 'data/projects.json',
       type: 'GET',
-      success: function(data) {
+      success: (data) => {
         localStorage.setItem('rawData', JSON.stringify(data));
         Project.loadAll(data);
       },
-      error: function(err) {
-        console.error('AJAX error!', err);
-      }
+      error: (err) => console.error('AJAX error!', err)
     });
   }
 }
