@@ -42,6 +42,4 @@
   }
 
   module.Project = Project;
-  Project.fetchAll();
-
 })(window);
