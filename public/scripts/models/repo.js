@@ -24,7 +24,5 @@
 
   repos.with = attr => repos.all.filter(repo => repo[attr]);
 
-  repos.requestRepos(repoView.index);
-
   module.repos = repos;
 })(window);
