@@ -6,12 +6,7 @@
   repos.all = [];
 
   repos.requestRepos = function(callback) {
-    $.ajax('https://api.github.com/users/themarquisdesheric/repos', {
-      method: 'GET',
-      headers: {
-        Authorization: `token ${process.env.AUTH_TOKEN}`
-      }
-    })
+    $.get('https://api.github.com/users/themarquisdesheric/repos')
       .then(res => {
         repos.all = res
         //return all repos that were not forked, and match the projects I want
