@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/themarquisdesheric/portfolio-project#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "express-request-proxy": "^2.0.0"
   }
 }
