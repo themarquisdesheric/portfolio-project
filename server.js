@@ -15,7 +15,7 @@ function proxyGitHub(request, response) {
   }))(request, response);
 }
 
-app.get('/github/*', proxyGitHub);
+app.get('https://api.github.com/*', proxyGitHub);
 
 app.use(express.static('./public'));
 
