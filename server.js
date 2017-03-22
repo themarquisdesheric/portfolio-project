@@ -2,7 +2,7 @@
 
 const express = require('express'),
   requestProxy = require('express-request-proxy'),
-  port = process.env.PORT || 3000,
+  PORT = process.env.PORT || 3000,
   app = express();
 
 function proxyGitHub(request, response) {
@@ -16,8 +16,8 @@ function proxyGitHub(request, response) {
 }
 
 app.get('/github/*', proxyGitHub);
-//changing ./public to ./
-app.use(express.static('./'));
+
+app.use(express.static('./public'));
 
 app.get('/', (request, response) => response.sendFile('public/index.html', {root: '.'}));
 
