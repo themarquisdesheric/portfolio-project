@@ -14,11 +14,11 @@
     })
       .then(res => {
         repos.all = res
-        //return all repos that were not forked
+        //return all repos that were not forked, and match the projects I want
         .filter(r => !r.fork && (r.name === 'busMall' || r.name === 'cookie-stand' || r.name === 'project-site'))
         .map(repo => {
           return {
-            url: repo.url,
+            url: repo.svn_url,
             description: repo.description,
             name: repo.name
           }
