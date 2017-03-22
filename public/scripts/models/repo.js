@@ -9,7 +9,7 @@
     $.ajax('https://api.github.com/users/themarquisdesheric/repos', {
       method: 'GET',
       headers: {
-        Authorization: `token ${token}`
+        Authorization: `token ${process.env.AUTH_TOKEN}`
       }
     })
       .then(res => {
