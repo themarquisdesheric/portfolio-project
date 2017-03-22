@@ -1,9 +1,9 @@
 'use strict';
 
 (function(module) {
-  const projectView = {};
+  const projectController = {};
 
-  projectView.render = () => {
+  projectController.render = () => {
     //reset active tab
     $('.tab').removeClass('active');
     $('.tab:eq(1)').addClass('active');
@@ -13,5 +13,5 @@
     $('#projects').fadeIn();
   }
 
-  module.projectView = projectView;
+  module.projectController = projectController;
 })(window);

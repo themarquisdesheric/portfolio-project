@@ -1,9 +1,9 @@
 'use strict';
 
 (function(module) {
-  const homeView = {};
+  const homeController = {};
 
-  homeView.render = function() {
+  homeController.render = function() {
     //reset active tab
     $('.tab').removeClass('active');
     $('.tab:first').addClass('active');
@@ -13,5 +13,5 @@
     $('#intro').fadeIn();
   }
 
-  module.homeView = homeView;
+  module.homeController = homeController;
 })(window);

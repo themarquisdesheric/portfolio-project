@@ -1,9 +1,9 @@
 'use strict';
 
 (function(module) {
-  page('/', homeView.render);
+  page('/', homeController.render);
 
-  page('/projects', projectView.render);
+  page('/projects', projectController.render);
 
   page();
 })(window);
