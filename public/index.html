@@ -13,10 +13,10 @@
 
   <script id="project-template" type="text/x-handlebars-template">
     <article>
-      <a href="{{url}}"><h2>{{title}}</h2>
+      <a href="{{url}}"><h2>{{name}}</h2>
         <img src="{{image}}"/>
       </a>
-      <section class="description">{{{body}}}</section>
+      <section class="description">{{description}}</section>
     </article>
   </script>
 
@@ -65,11 +65,12 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-<script src="scripts/model.js"></script>
-<script src="scripts/view.js"></script>
-<script src="scripts/controllers/homeController.js"></script>
-<script src="scripts/controllers/projectsController.js"></script>
+<script src="vendor/scripts/page.js"></script>
+<script src="scripts/views/repoView.js"></script>
+<script src="scripts/models/githubToken.js"></script>
+<script src="scripts/models/repo.js"></script>
+<script src="scripts/views/homeView.js"></script>
+<script src="scripts/views/projectsView.js"></script>
 <script src="scripts/controllers/routes.js"></script>
 </body>
 </html>
