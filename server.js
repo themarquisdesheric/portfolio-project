@@ -16,8 +16,8 @@ function proxyGitHub(request, response) {
 }
 
 app.get('/github/*', proxyGitHub);
-
-app.use(express.static('./public'));
+//changing ./public to ./
+app.use(express.static('./'));
 
 app.get('/', (request, response) => response.sendFile('public/index.html', {root: '.'}));
 
