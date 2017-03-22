@@ -1,6 +1,6 @@
 'use strict';
 
-const express = require('express'),
+var express = require('express'),
   requestProxy = require('express-request-proxy'),
   PORT = process.env.PORT || 3000,
   app = express();
