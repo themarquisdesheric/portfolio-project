@@ -16,5 +16,7 @@
     );
   };
 
+  repos.requestRepos(repoView.index);
+
   module.repoView = repoView;
 })(window);

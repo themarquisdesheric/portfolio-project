@@ -1,9 +1,21 @@
 'use strict';
 
-const express = require('express');
-const app = express();
+var express = require('express'),
+  requestProxy = require('express-request-proxy'),
+  PORT = process.env.PORT || 3000,
+  app = express();
 
-const PORT = process.env.PORT || 3000;
+function proxyGitHub(request, response) {
+  console.log('Routing Github request for', request.params[0]);
+  (requestProxy({
+    url: 'https://api.github.com/' + request.params[0],
+    header: {
+      Authorization: `token ${process.env.AUTH_TOKEN}`
+    }
+  }))(request, response);
+}
+
+app.get('/github/*', proxyGitHub);
 
 app.use(express.static('./public'));
 
